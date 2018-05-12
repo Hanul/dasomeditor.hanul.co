@@ -1,0 +1,15 @@
+meta viewport='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no'
+
+link rel='stylesheet' href='/R/reset.css'
+link rel='stylesheet' href='/R/style.less'
+
+title '다솜 에디터'
+
+body
+	img src='/R/icon.png'
+	<? self.params.version !== undefined && self.params.version < CONFIG.DasomEditorSite.dasomEditorVersion >
+	'새 버전이 있습니다.'
+	a href='https://github.com/Hanul/DasomEditor/releases' target='_blank'
+		'업데이트'
+	</?>
+	script src='/R/script.js'

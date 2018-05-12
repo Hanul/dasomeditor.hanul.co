@@ -1,0 +1,11 @@
+meta viewport='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no'
+
+link rel='stylesheet' href='/R/reset.css'
+link rel='stylesheet' href='/R/style.less'
+
+title '다솜 에디터'
+
+body
+	img src='/R/icon.png'
+	
+	script src='/R/script.js'
