@@ -3,14 +3,24 @@ meta viewport='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum
 link rel='stylesheet' href='/R/reset.css'
 link rel='stylesheet' href='/R/style.less'
 
-title '다솜 에디터'
+title 'Dasom Editor'
 
 body
+	h1
+		'Dasom Editor v{{CONFIG.DasomEditorSite.dasomEditorVersion}}'
 	img src='/R/icon.png'
+	
 	<? self.params.version !== undefined && self.params.version < CONFIG.DasomEditorSite.dasomEditorVersion >
-	'새 버전이 있습니다.'
-	a href='https://github.com/Hanul/DasomEditor/releases' target='_blank'
-		'업데이트'
+	p
+		'새 버전이 있습니다.'
+		a href='https://github.com/Hanul/DasomEditor/releases' target='_blank'
+			'업데이트'
 	</?>
+	
+	ul#menu
+		li
+			a href='https://github.com/Hanul/DasomEditor' target='_blank'
+				'GitHub 저장소'
+	
 	script src='/R/BROWSER.js'
 	script src='/R/script.js'
