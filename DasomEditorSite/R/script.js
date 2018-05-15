@@ -7,7 +7,7 @@ EVENT('keydown', (e) => {
 		let key = e.getKey().toLowerCase();
 		
 		// 현재 탭 종료
-		if (key === 'w') {
+		if (key === 'w' || key === 'q') {
 			location.href = 'about:blank';
 		}
 	}
