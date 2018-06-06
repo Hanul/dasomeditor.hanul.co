@@ -21,6 +21,14 @@ body
 		li
 			a href='https://github.com/Hanul/DasomEditor' target='_blank'
 				'GitHub 저장소'
+		li
+			a href='mailto:hanul@hanul.me'
+				'문의하기: hanul@hanul.me'
+	
+	p#description
+		'Ctrl + S로 저장할 수 있습니다.'
+		br
+		'Ctrl + Q로 현재 탭을 종료할 수 있습니다.'
 	
 	script src='/R/BROWSER.js'
 	script src='/R/script.js'
