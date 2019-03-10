@@ -3,9 +3,32 @@ meta viewport='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum
 link rel='stylesheet' href='/R/reset.css'
 link rel='stylesheet' href='/R/style.less'
 
-title '다솜 에디터'
+title 'Dasom Editor'
 
 body
+	h1
+		'Dasom Editor v{{CONFIG.DasomEditorSite.dasomEditorVersion}}'
 	img src='/R/icon.png'
 	
+	<? self.params.version !== undefined && self.params.version < CONFIG.DasomEditorSite.dasomEditorVersion >
+	p
+		'새 버전이 있습니다.'
+		a href='https://github.com/Hanul/DasomEditor/releases' target='_blank'
+			'업데이트'
+	</?>
+	
+	ul#menu
+		li
+			a href='https://github.com/Hanul/DasomEditor' target='_blank'
+				'GitHub 저장소'
+		li
+			a href='mailto:hanul@hanul.me'
+				'문의하기: hanul@hanul.me'
+	
+	p#description
+		'Ctrl + S로 저장할 수 있습니다.'
+		br
+		'Ctrl + Q로 현재 탭을 종료할 수 있습니다.'
+	
+	script src='/R/BROWSER.js'
 	script src='/R/script.js'

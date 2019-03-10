@@ -8,7 +8,7 @@ EVENT('keydown', (e) => {
 		
 		// 현재 탭 종료
 		if (key === 'w' || key === 'q') {
-			location.href = 'about:blank';
+			parent.postMessage('__CLOSE_HOME_TAB', '*');
 		}
 	}
 	
