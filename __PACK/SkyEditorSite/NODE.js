@@ -1,0 +1,1 @@
+SkyEditorSite.MAIN=METHOD({run:(e,t)=>{let n=require("less"),i=NSP.Bridge({rootPath:"./SkyEditorSite/view",templateEngine:SML.Compile}).requestListener;e(i),t({extension:"less",preprocessor:(e,t)=>{n.render(e,(e,n)=>{t({content:n.css,contentType:"text/css",version:CONFIG.version})})}})}});

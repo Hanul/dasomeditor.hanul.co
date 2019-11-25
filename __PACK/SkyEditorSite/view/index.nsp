@@ -3,23 +3,23 @@ meta viewport='width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum
 link rel='stylesheet' href='/R/reset.css'
 link rel='stylesheet' href='/R/style.less'
 
-title 'Dasom Editor'
+title 'Sky Editor'
 
 body
 	h1
-		'Dasom Editor v{{CONFIG.DasomEditorSite.dasomEditorVersion}}'
+		'Sky Editor v{{CONFIG.SkyEditorSite.dasomEditorVersion}}'
 	img src='/R/icon.png'
 	
-	<? self.params.version !== undefined && self.params.version < CONFIG.DasomEditorSite.dasomEditorVersion >
+	<? self.params.version !== undefined && self.params.version < CONFIG.SkyEditorSite.dasomEditorVersion >
 	p
 		'새 버전이 있습니다.'
-		a href='https://github.com/Hanul/DasomEditor/releases' target='_blank'
+		a href='https://github.com/Hanul/SkyEditor/releases' target='_blank'
 			'업데이트'
 	</?>
 	
 	ul#menu
 		li
-			a href='https://github.com/Hanul/DasomEditor' target='_blank'
+			a href='https://github.com/Hanul/SkyEditor' target='_blank'
 				'GitHub 저장소'
 		li
 			a href='mailto:hanul@hanul.me'

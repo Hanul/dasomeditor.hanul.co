@@ -1,11 +1,11 @@
-DasomEditorSite.MAIN = METHOD({
+SkyEditorSite.MAIN = METHOD({
 
 	run : (addRequestListener, addPreprocessor) => {
 		
 		let Less = require('less');
 		
 		let nspRequestListener = NSP.Bridge({
-			rootPath : './DasomEditorSite/view',
+			rootPath : './SkyEditorSite/view',
 			templateEngine : SML.Compile
 		}).requestListener;
 		

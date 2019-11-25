@@ -4,13 +4,13 @@ BOOT({
 	CONFIG : {
 		isDevMode : true,
 		
-		defaultBoxName : 'DasomEditorSite',
+		defaultBoxName : 'SkyEditorSite',
 		
-		title : '다솜 에디터',
+		title : 'Sky Editor',
 		
 		webServerPort : 8512,
 		
-		DasomEditorSite : {
+		SkyEditorSite : {
 			dasomEditorVersion : 0.2
 		}
 	},
