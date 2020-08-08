@@ -11,7 +11,7 @@ BOOT({
 		webServerPort : 8512,
 		
 		SkyEditorSite : {
-			dasomEditorVersion : 0.2
+			skyEditorVersion : 0.2
 		}
 	},
 	NODE_CONFIG : {
